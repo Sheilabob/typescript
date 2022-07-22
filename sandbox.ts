@@ -1,29 +1,41 @@
-let names = ['luigi', 'mario', 'yoshi'];
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
 
-names.push('toad');
+age = 30;
 
-let numbers = [10, 20, 30, 40];
+isLoggedIn = true;
 
-numbers.push(25);
+//arrays
+let ninjas: string[] = [];
 
-let mixed = ['ken', 4, 'chun-li', 8, false];
+ninjas.push('shaun');
 
-mixed.push('ryu');
-mixed.push(2);
-mixed.push(true);
 
-let ninja = {
-    name: 'mario',
-    belt: 'black',
-    age: 30
+//union types
+let mixed: (string|number|boolean)[] = [];
+
+mixed.push(false);
+mixed.push(20);
+mixed.push('hello');
+console.log(mixed);
+
+let uid: string|number;
+uid = '123';
+uid = 123;
+
+//objects
+
+let ninjaOne: object;
+ninjaOne = { name: 'yoshi', age: 30 };
+
+let ninjaTwo: {
+    name: string,
+    age: number,
+     beltColor: string
 };
-
-ninja.age = 40;
-ninja.name = 'ryu';
-ninja = {
-    name: 'yoshi',
-    belt: 'orange',
-    age: 40
-};
-
-
+ninjaTwo = {
+    name: 'Mario',
+    age: 20,
+    beltColor: 'black'
+}
